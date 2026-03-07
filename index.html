@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta autor="Wilson Emílio Ali ">
+
+<link rel="stylesheet" href="estilo.css">
+
+</head>
+<section class="hero">
+    <div class="logo-wrap">
+      <img src="Villa logo.png" alt="Villa Pure Indulgence Logo">
+    </div>
+
+    <h1 class="brand-title">Villa Pure Indulgence</h1>
+    <p class="brand-sub">Perfumes de Luxo · Nampula</p>
+
+    <p class="hero-desc">
+      Estampa o aroma que faz a diferença. Perfumes Villa — qualidade que você sente,
+      elegância que todos percebem. Disponível em Nampula, bairro Muahivire.
+      Torne cada momento inesquecível com uma fragrância que acompanha você o dia inteiro.
+    </p>
+
+    <div class="badge">
+      <span>✦</span>
+      <span>Preço especial a partir de 250 MT</span>
+      <span>✦</span>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ PRODUTOS ═══════════ -->
+  <section class="products">
+    <div class="products-inner">
+      <span class="section-label reveal">Nossa Coleção</span>
+      <h2 class="section-title reveal">Fragrâncias que <em>encantam</em></h2>
+
+      <div class="grid">
+
+        <!-- Creme Corporal -->
+        <div class="card reveal">
+          <img src="IMG-20260306-WA0006.jpg" alt="Creme Hidratante Villa" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Skincare</span>
+            <p class="card-name">Creme Hidratante</p>
+            <p class="card-desc">
+              Hidrata e protege contra o envelhecimento, regenera a pele e reduz
+              a aparência de cicatrizes e estrias.
+            </p>
+            <span class="card-price">250 MT</span>
+          </div>
+        </div>
+
+        <!-- Femininos -->
+        <div class="card reveal">
+          <img src="IMG-20260306-WA0007.jpg" alt="Fragrâncias Femininas" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Fragrâncias Femininas</span>
+            <p class="card-name">Olímpia · Good Girl</p>
+            <p class="card-desc">
+              Notas florais e sensuais para a mulher que deixa rastros de elegância
+              onde quer que passe.
+            </p>
+            <span class="card-price">600 MT</span>
+          </div>
+        </div>
+
+        <!-- Masculinos -->
+        <div class="card reveal">
+          <img src="IMG-20260306-WA0010.jpg" alt="Fragrâncias Masculinas" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Fragrâncias Masculinas</span>
+            <p class="card-name">Invictus · 1 Million · Sauvage · Scandal</p>
+            <p class="card-desc">
+              Aromas intensos e marcantes para o homem que impõe presença.
+              Disponível em 50 ml e 100 ml.
+            </p>
+            <span class="card-price">600 MT</span>
+          </div>
+        </div>
+
+        <!-- Perfume Villa -->
+        <div class="card reveal">
+          <img src="img vila.png" alt="Perfume Villa" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Destaque da Coleção</span>
+            <p class="card-name">Perfume Villa</p>
+            <p class="card-desc">
+              A fragrância símbolo da casa Villa. Uma composição inconfundível de
+              sofisticação e charme duradouro.
+            </p>
+            <span class="card-price">600 MT</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ INFO ═══════════ -->
+  <div class="info-strip">
+    <div class="info-inner">
+
+      <div class="info-item reveal">
+        <span class="icon">🕘</span>
+        <span class="label">Horário</span>
+        <span class="value">9h – 18h · Seg a Sáb</span>
+      </div>
+
+      <div class="info-item reveal">
+        <span class="icon">📦</span>
+        <span class="label">Formatos</span>
+        <span class="value">50 ml &amp; 100 ml</span>
+      </div>
+
+      <div class="info-item reveal">
+        <span class="icon">🚀</span>
+        <span class="label">Entrega</span>
+        <span class="value">Rápida em Nampula</span>
+      </div>
+
+      <div class="info-item reveal">
+        <span class="icon">📍</span>
+        <span class="label">Localização</span>
+        <span class="value">Muahivire, Nampula</span>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ═══════════ CTA ═══════════ -->
+  <section class="cta">
+    <div class="cta-inner">
+      <p class="cta-quote reveal">
+        "Descubra a essência Villa —<br>uma fragrância que conta a sua história."
+      </p>
+      <div class="divider reveal"></div>
+      <p class="cta-contact reveal">Reservas &amp; Informações</p>
+      <p class="cta-phone reveal">(+258) 848 905 214 / 877 192 656</p>
+      <a href="tel:+258848905214" class="btn-gold reveal"><span>Ligar Agora</span></a>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer>
+    <p>© 2026 Villa Pure Indulgence · Muahivire, Nampula · Todos os direitos reservados</p>
+  </footer>
+
+
+  <script>
+    // Scroll reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          // stagger children
+          [...e.target.parentElement.querySelectorAll('.reveal')].forEach((el, i) => {
+            el.style.transitionDelay = `${i * 0.12}s`;
+          });
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
