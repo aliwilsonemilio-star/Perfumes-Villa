@@ -74,7 +74,7 @@
     .logo-wrap::after  { width: 380px; height: 380px; border-color: rgba(201,168,76,0.08); }
 
     .logo-wrap img {
-      width: 300px;
+      width: 350px;
       max-width: 70vw;
       display: block;
       filter: drop-shadow(0 0 30px rgba(201,168,76,0.35));
@@ -388,4 +388,5 @@
     .reveal.visible {
       opacity: 1;
       transform: translateY(0);
+
     }
